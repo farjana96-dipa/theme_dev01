@@ -1,0 +1,115 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version" : 2,
+	"settings" : {
+		"color":{
+			"palette": [
+				{
+					"color":"#FFFFFF",
+				    "name" : "Base",
+				    "slug" : "base"
+			    },
+				{
+					"color" : "#EB5B00",
+					"name" : "Text",
+					"slug" : "text"
+				},
+				{
+					"color" : "#F72C5B",
+					"name" : "Primary",
+					"slug"  : "primary"
+				},
+				{
+					"color" : "#EB5B00",
+					"name" : "Secondary",
+					"slug" : "secondary"
+				},
+				{
+					"color" : "#740938",
+					"name" : "Accent",
+					"slug" : "accent"
+				},
+				{
+					"color" : "#000000",
+					"name" : "Black",
+					"slug" : "black"
+				}
+
+			],
+			"custom": true,
+			"customDuotone": true,
+			"customGradient": true
+		},
+		"spacing": {
+			"blockGap": null,
+			"customSpacingSize": true,
+			"margin": true,
+			"padding": true,
+			"spacingScale": {
+				"operator": "*",
+				"increment": 1.5,
+				"steps": 7,
+				"mediumStep": 1.5,
+				"unit": "rem"
+			},
+			"spacingSizes": [],
+			"units": [ "px", "em", "rem", "vh", "vw", "%" ]
+		},
+		"typography": {
+			"customFontSize": true,
+			"dropCap": true,
+			"fontStyle": true,
+			"fontWeight": true,
+			"letterSpacing": true,
+			"lineHeight": true,
+			"textColumns": false,
+			"textDecoration": true,
+			"textTransform": true,
+			"writingMode": false
+		},
+		"custom": {
+			"lineHeight": true
+		},
+		"styles": {
+			"typography": {
+				"lineHeight": "var:custom|line-height|md"
+			},
+			"blocks": {
+				"core/button": {
+					"variations": {
+						"outline": {
+							"border": {
+								"color": "currentColor",
+								"width": "1px",
+								"radius" : true
+							},
+							"css": ".wp-block-button__link:not(.has-background):hover {background-color:color-mix(in srgb, var(--wp--preset--color--contrast) 5%, transparent);}",
+							"spacing": {
+								"padding": {
+									"bottom": "calc(1rem - 1px)",
+									"left": "calc(2.25rem - 1px)",
+									"right": "calc(2.25rem - 1px)",
+									"top": "calc(1rem - 1px)"
+								}
+							}
+						}
+					}
+				},
+				"core/paragraph": {
+						"typography": {
+							"lineHeight": "var:custom|line-height|lg"
+						}
+					},
+				"core/image": {
+						"lightbox": {
+							"allowEditing": true,
+							"enabled": true
+						}
+				}
+			}
+			
+		}
+	
+		
+	}
+}

@@ -1,0 +1,31 @@
+body.login{
+    background-image:  url('../img/coffee3-02c76c3b922183d7c5144e6856065ad68834ddc7ab5367481a225c516a308cb8.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+body.login #login{
+   
+    padding:30px 50px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+ 
+}
+
+body.login #login #nav a{
+    color:#fff;
+}
+
+body.login #login #nav a:hover{
+    color: #ea1a70;
+}
+
+body.login #login #backtoblog a{
+    color:#fff;
+}
+body.login #login #backtoblog a:hover{
+    color:#ea1a70;
+}
